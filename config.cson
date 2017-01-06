@@ -1,0 +1,109 @@
+"*":
+  core:
+    disabledPackages: [
+      "Parinfer"
+    ]
+    packagesWithKeymapsDisabled: [
+      "atom-paredit"
+      "lisp-paredit"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "one-dark-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "0a1becef-a1f5-2cba-5557-1b5ea2652b64"
+  "git-plus":
+    general:
+      _analyticsUserId: "b00c7067-9696-4ac1-8158-d08c71c110b1"
+  "lisp-paredit":
+    indentationForms: [
+      "&"
+      "monitor-exit"
+      "/^case/"
+      "try"
+      "/^reify/"
+      "finally"
+      "/^(.*-)?loop/"
+      "/^let/"
+      "/^import/"
+      "new"
+      "/^deftype/"
+      "/^let/"
+      "fn"
+      "recur"
+      "/^set.*!$/"
+      "."
+      "var"
+      "quote"
+      "catch"
+      "throw"
+      "monitor-enter"
+      "ns"
+      "in-ns"
+      "/^([^/]+/)?def/"
+      "/^if/"
+      "/^when/"
+      "/^unless/"
+      "while"
+      "for"
+      "/(^|/)with/"
+      "testing"
+      "while"
+      "cond"
+      "condp"
+      "apply"
+      "binding"
+      "locking"
+      "proxy"
+      "reify"
+      "/^extend/"
+      "facts"
+      "do"
+      "doseq"
+      "dorun"
+      "doall"
+      "dosync"
+      "start"
+      "stop"
+      "->>"
+      "->"
+      "some->"
+    ]
+  "one-dark-ui": {}
+  "proto-repl":
+    autoPrettyPrint: true
+    inkConsole: false
+    leinPath: "/usr/local/bin/lein"
+    preferLein: false
+    showInlineResults: false
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  tabs:
+    addNewTabsAtEnd: true
+    enableVcsColoring: true
+  "tool-bar":
+    position: "Right"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".clojure.source":
+  editor:
+    showIndentGuide: true
+runner:
+  scopes:
+    js: "node"
