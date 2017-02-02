@@ -1,7 +1,7 @@
 "*":
   core:
     disabledPackages: [
-      "Parinfer"
+      "atom-paredit"
     ]
     packagesWithKeymapsDisabled: [
       "atom-paredit"
@@ -9,11 +9,12 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
-      "one-dark-syntax"
+      "atom-light-ui"
+      "pen-paper-coffee-syntax"
     ]
     useCustomTitleBar: true
   editor:
+    autoIndentOnPaste: false
     invisibles: {}
     scrollPastEnd: true
     showInvisibles: true
@@ -22,6 +23,10 @@
   "git-plus":
     general:
       _analyticsUserId: "b00c7067-9696-4ac1-8158-d08c71c110b1"
+  linter:
+    showErrorPanel: false
+  "linter-spell":
+    spellPath: "/usr/local/bin/hunspell"
   "lisp-paredit":
     indentationForms: [
       "&"
@@ -76,13 +81,116 @@
       "->"
       "some->"
     ]
+    strict: false
   "one-dark-ui": {}
   "proto-repl":
     autoPrettyPrint: true
-    inkConsole: false
+    displayHelpText: false
     leinPath: "/usr/local/bin/lein"
     preferLein: false
+    refreshBeforeRunningSingleTest: false
+    refreshBeforeRunningTestFile: false
+    refreshOnReplStart: false
     showInlineResults: false
+  "seti-ui":
+    compactView: true
+  "spell-check":
+    addKnownWords: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.clojure"
+    ]
+    knownWords: [
+      "fn"
+      "quot"
+      "ns"
+      "euler"
+      "defn"
+      "coll"
+      "conj"
+      "clojure"
+      "math"
+      "set"
+      "seq"
+      "mapcat"
+      "sqrt"
+      "prn"
+      "util"
+      "defmethod"
+      "defmulti"
+      "assoc"
+      "tools"
+      "logging"
+      "edn"
+      "vec"
+      "mapv"
+      "eid"
+      "tempid"
+      "attr"
+      "user"
+      "group"
+      "lookup"
+      "datetime"
+      "db"
+      "id"
+      "ctrl"
+      "repl"
+      "lein"
+      "zxm"
+      "nrepl"
+      "dev"
+      "clj"
+      "org"
+      "http"
+      "proto"
+      "crypto"
+      "src"
+      "args"
+      "ArityException"
+      "nrepl"
+      "html"
+      "datomic.api"
+      "datomic"
+      "api"
+      "init"
+      "uuid"
+      "admin"
+      "ident"
+      "username"
+      "config"
+      "tcp"
+      "rmi"
+      "cfg"
+      "url"
+      "dec"
+      "squuid"
+      "str"
+      "cond"
+      "fdef"
+      "req-un"
+      "dissoc"
+      "fedf"
+      "middleware"
+      "env"
+      "json"
+      "utils"
+      "params"
+      "cheshire"
+      "bidi"
+      "async"
+      "joda"
+      "req"
+      "msg"
+      "svr"
+      "svr"
+    ]
+    localePaths: [
+      "/Library/Spelling/"
+    ]
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
@@ -92,17 +200,23 @@
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
+  "toggle-gutter":
+    showNumbers: true
   "tool-bar":
     position: "Right"
+    visible: false
   "tree-view":
+    alwaysOpenExisting: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: false
 ".clojure.source":
   editor:
+    autoIndent: true
+    autoIndentOnPaste: false
+    nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
     showIndentGuide: true
 runner:
   scopes:

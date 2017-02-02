@@ -30,25 +30,25 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
-'.platform-darwin atom-text-editor[data-grammar~="clojure"].autocomplete-active':
-  'enter': 'autocomplete-plus:confirm'
-  'tab': 'autocomplete-plus:confirm'
+ '.platform-darwin atom-text-editor[data-grammar~="clojure"].autocomplete-active':
+   'enter': 'autocomplete-plus:confirm'
+   'tab': 'autocomplete-plus:confirm'
 
-'.platform-darwin atom-text-editor[data-grammar~="clojure"].proto-repl-repl':
-  'backspace': 'core:backspace'
+ '.platform-darwin atom-text-editor[data-grammar~="clojure"].proto-repl-repl':
+   'backspace': 'core:backspace'
 
-
-'.platform-darwin atom-text-editor[data-grammar~="clojure"]':
-  'tab': 'lisp-paredit:indent'
-  'ctrl-s': 'lisp-paredit:splice'
-  'ctrl-right': 'paredit:slurpSexpFwd'
-  'ctrl-left': 'paredit:barfSexpFwd'
-  'ctrl-k': 'paredit:killSexpFwd'
-  'ctrl-w': 'lisp-paredit:expand-selection'
-  'enter': 'lisp-paredit:newline'
-  'ctrl-x':    'jason:cut-sexp'
-  'ctrl-c':    'jason:copy-sexp'
-  'ctrl-v':    'jason:paste-sexp'
-  'ctrl-d':    'jason:delete-sexp'
-  'ctrl-i':    'jason:indent-top-sexp'
-  'backspace':   'paredit:deleteBwd'
+ '.platform-darwin atom-text-editor[data-grammar~="clojure"]':
+#   'tab': 'lisp-paredit:indent'
+   'ctrl-s': 'lisp-paredit:splice'
+#   'ctrl-right': 'paredit:slurpSexpFwd'
+#   'ctrl-left': 'paredit:barfSexpFwd'
+#   'ctrl-k': 'paredit:killSexpFwd'
+   'ctrl-w': 'lisp-paredit:expand-selection'
+   'enter': 'lisp-paredit:newline'
+   'ctrl-x':    'jason:cut-sexp'
+   'ctrl-c':    'jason:copy-sexp'
+   'ctrl-v':    'jason:paste-sexp'
+   'ctrl-d':    'jason:delete-sexp'
+   'ctrl-i':    'jason:indent-top-sexp'
+   'ctrl-.':     'parinfer:toggle-mode'
+#   'backspace':   'paredit:deleteBwd'

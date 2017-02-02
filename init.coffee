@@ -9,6 +9,7 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
 maintainingCursorPosition = (f)->
   editor = atom.workspace.getActiveTextEditor()
   currSelected = editor.getSelectedBufferRanges()
