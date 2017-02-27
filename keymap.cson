@@ -34,8 +34,8 @@
    'enter': 'autocomplete-plus:confirm'
    'tab': 'autocomplete-plus:confirm'
 
- '.platform-darwin atom-text-editor[data-grammar~="clojure"].proto-repl-repl':
-   'backspace': 'core:backspace'
+ '.platform-darwin ink-console atom-text-editor[data-grammar~="clojure"]':
+   'enter': 'editor:newline'
 
  '.platform-darwin atom-text-editor[data-grammar~="clojure"]':
 #   'tab': 'lisp-paredit:indent'

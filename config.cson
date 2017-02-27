@@ -9,8 +9,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-light-ui"
-      "pen-paper-coffee-syntax"
+      "atom-dark-ui"
+      "colorblind-syntax"
     ]
     useCustomTitleBar: true
   editor:
@@ -23,8 +23,7 @@
   "git-plus":
     general:
       _analyticsUserId: "b00c7067-9696-4ac1-8158-d08c71c110b1"
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-spell":
     spellPath: "/usr/local/bin/hunspell"
   "lisp-paredit":
@@ -187,6 +186,18 @@
       "msg"
       "svr"
       "svr"
+      "num"
+      "concat"
+      "ok"
+      "hjd"
+      "condp"
+      "ddz"
+      "pos"
+      "ret"
+      "nat"
+      "dict"
+      "un"
+      "nilable"
     ]
     localePaths: [
       "/Library/Spelling/"
@@ -200,6 +211,8 @@
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
+  "terminal-plus":
+    toggles: {}
   "toggle-gutter":
     showNumbers: true
   "tool-bar":
